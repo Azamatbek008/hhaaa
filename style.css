@@ -1,0 +1,46 @@
+.conatiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.box{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  animation: effect 2s ease infinite;
+}
+@keyframes effect {
+  0%{
+    
+    
+    
+    
+    width: 100px;
+    height: 100px;
+  }90%{
+    width: 10px;
+    height: 10px;
+  }100%{
+    transform: rotate(360deg);
+  }
+}
+span{
+  display: block;
+  
+  position: absolute;
+  width: 20px;
+  height: 20px; 
+  background: #121212;
+}
+span:nth-child(2){
+  right: 0;
+}
+span:nth-child(3){
+  right: 0;
+  bottom: 0;
+}
+span:nth-child(4){
+  left: 0;
+  bottom: 0;
+}
